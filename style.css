@@ -1,0 +1,267 @@
+a{text-decoration: none;}
+ul{list-style: none;}
+.navbar-nav{
+	float: right !important;
+	margin-right: 0px;
+}
+
+.top-nav ul li a:hover {
+    color: #ff304f;
+	transform: scale(1.1);
+}
+.navbar-collapse{flex-grow: 0;}
+
+nav ul li a:hover{transform: scale(1.1); transition-duration: 1s; color:red !important;}
+nav ul li a{padding:0 15px !important;}
+.nav-link{
+    color: #fff !important;
+    font-weight: 400;
+    font-size: 17px;
+    letter-spacing: 1px;
+    position: relative;
+    display: inline-block;
+
+}
+ul .nav .navbar{text-align: center !important;} 
+button.navbar-toggler{border-color: #fff; border-radius: 0px; color: #fff;margin: 15px ; padding: 7px 8px;}
+.active{color: red !important;font-size: 18px;}
+.navbar-brand{color: #fff;font-size: 25px;}
+.navbar-brand:hover{color: #ff304f;} 
+
+.nav > li > a:hover, .nav > li > a:focus {
+    background: none;
+}
+
+
+.banner-profile{ display: flex;align-items: end; justify-content: center; flex-direction: column;}
+.banner-profile h6 {
+    font-size: 28px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+.banner-profile h2 {
+    color: #ff304f;
+    font-size: 80px;
+    font-family: 'Scada', sans-serif;
+    text-shadow: 2px 2px 11px #5d5d5d;
+    font-style: italic;
+}
+.banner-profile p {
+    color: #0e0e0e;
+    letter-spacing: 1px;
+    font-size: 15px;
+	margin-top: 40px;
+}
+
+/*-- Pop Effect --*/
+.popEffect{
+	display: inline;
+	text-indent: 8px;
+	align-items: end;
+	color: #fff;
+}
+ .popEffect span {
+    animation: pop 7.5s linear infinite 0s;
+    opacity: 0;
+	text-align: right;
+    overflow: hidden;
+    position: absolute;
+    width: 78%;
+    left:20.5%;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+	font-size: 35px;
+}
+
+.popEffect span:nth-child(2)
+{
+	animation-delay: 2.5s;
+	
+}
+.popEffect span:nth-child(3)
+{
+	animation-delay: 5s;
+
+}
+.popEffect span:nth-child(4)
+{
+	animation-delay: 7.5s;
+	
+} 
+/*-- Pop Effect Animation --*/
+@keyframes pop{
+	0% { opacity: 0; }
+	5% { opacity: 0; transform: rotate(0deg) scale(0.10) skew(0deg) translate(0px); }
+	10% { opacity: 1; transform: translateY(0px); }
+	25% { opacity: 1; transform: translateY(0px); }
+	30% { opacity: 0; transform: translateY(0px); }
+	80% { opacity: 0; }
+	100% { opacity: 0;}
+}
+
+
+.btnn {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    padding: 11px 20px;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    letter-spacing: 4px;
+    font-weight: 300;
+    background-color: #ff304f;
+    transition: .5s all;
+    border-radius: 20px 0 0;
+    margin: 16px 0px;
+}
+.btnn:hover {
+	background: #000;
+	color: #fff;
+}
+
+
+/* project */
+.project{
+	background: url(img/bg.jpg);
+	background-position: center;
+	background-attachment: fixed;
+}
+/* about */
+
+
+.about .about-div{margin-top: 40px; margin-bottom: 40px;}
+.about a:hover{background: #000; transition: 0.5s all;}
+.aboutme-1{padding-left: 60px;}
+table tr td{width: 5px; height: 5px;}
+.aboutme-2{margin-bottom: 20px;}
+
+
+/* contact */
+ .backgd{
+	background-image: url("img/bg2.jpg")  ;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+}
+#contact a{color: #fff;}
+
+/* skill */
+
+.skill{margin-left: 60px;}
+.skill h6{margin-top: 15px;}
+
+/* services */
+
+#service h2{letter-spacing: 4px;}
+
+/* footer */
+
+footer p{text-shadow: 2px 2px 4px #000;}
+.top{right: 10px;}
+
+
+/* education */
+
+.edu,.certify {padding-left: 30px;}
+
+
+.certify-detail, .edu-detail
+{
+	padding-left: 20px;
+	border-left: 3px solid #ff304f; 
+	position: relative; 
+	margin-top: -3px;
+}
+
+
+.certify-detail h5::before,.edu-detail h5::before{
+	content: "";
+	position: absolute;
+	width: 18px;
+	height: 18px;
+	left: -10px;
+	border-radius: 50%;
+	background: #fff;
+	border: 3px solid #ff304f;
+}
+
+/* Progress bar */
+.progress{border-radius: 0px;}
+.progress-bar{animation:htm 2s ease-in-out ;}
+@keyframes htm{
+	from {width: 0%;}
+	to {width: 100%;}
+}
+
+
+/* Responsive */
+
+	@media screen and ( max-width:480px ){
+
+		.navbar-collapse
+		{
+			letter-spacing: 1px;
+			line-height:40px;
+			position: absolute;
+			top: 92px;
+			left: 0px;
+			right: 0px;
+			text-align: center;
+			background:#000;
+			opacity: 0.7;
+		} 
+
+	.popEffect span{font-size: 25px;}
+	.popEffect{
+		margin-top: 5px;
+		margin-right: 5px;
+	}
+	
+	.banner-profile h6{font-size: 18px;margin-top: 20px;}
+	.banner-profile h2{font-size: 40px;}
+    .educate .col-p-12
+	{
+		flex-basis: 100%;
+		max-width: 100%;
+		flex-shrink: 0;
+		
+	}
+	
+	
+	 .edu-detail h5, .certify-detail h5{font-size: 18px !important;}
+	 .edu-detail p, .certify-detail p{font-size: 16px;}
+     .aboutme-1, .aboutme-2{padding-left: 5px; font-size: 15px;margin-bottom: 20px;}
+	 .skill{margin-left: 5px;}
+	 
+
+}
+
+
+
+
+ @media screen and ( max-width: 800px ){
+
+	.banner-profile h6{font-size: 20px;margin-top: 20px;}
+	.banner-profile h2{font-size: 40px;}
+	.banner-profile p{font-size:14px;}
+
+	.aboutme-1{padding-left: 10px;}
+	.aboutme-2{padding: 0px;}
+	.aboutme-1 h3{font-size: 20px !important;}
+	.aboutme-2 .persent{font-size: 18px !important;}
+	/* .aboutme-2 .abt{font-size: 15px !important;} */
+	.about-div{margin: 10px !important;}
+	.edu-detail h5, .certify-detail h5{font-size: 18px !important;}
+	.btnn{padding: 8px 12px; font-size: 14px;}
+	.popEffect span{font-size: 25px;}
+
+ }
+	 
+	
+
+
+
